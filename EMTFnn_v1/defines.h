@@ -7,15 +7,13 @@
 #include <cstddef>
 #include <cstdio>
 
+namespace hls4ml_emtfnn_v1 {
+
 // hls-fpga-machine-learning insert numbers
-#define N_INPUT_1_1 29
-#define N_INPUT_1_1 29
-#define N_LAYER_3 20
-#define N_LAYER_3 20
-#define N_LAYER_7 16
-#define N_LAYER_7 16
-#define N_LAYER_11 2
-#define N_LAYER_11 2
+static const int N_INPUT_1_1 = 29;
+static const int N_LAYER_3 = 20;
+static const int N_LAYER_7 = 16;
+static const int N_LAYER_11 = 2;
 
 // hls-fpga-machine-learning insert layer-precision
 typedef ap_uint<13> input_t;
@@ -41,5 +39,7 @@ typedef ap_fixed<25,9> dense_2_bias_t;
 typedef ap_uint<1> layer11_index;
 typedef ap_uint<8> result_t;
 typedef ap_fixed<18,8> dense_2_relu_table_t;
+
+} // hls4ml_emtfnn_v1
 
 #endif

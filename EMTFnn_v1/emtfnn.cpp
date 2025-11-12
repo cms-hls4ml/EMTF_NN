@@ -3,6 +3,8 @@
 #include "emtfnn.h"
 #include "parameters.h"
 
+namespace hls4ml_emtfnn_v1 {
+
 void emtfnn(
     input_t input1[N_INPUT_1_1],
     result_t layer12_out[N_LAYER_11]
@@ -64,3 +66,5 @@ void emtfnn(
     nnet::relu<layer11_t, result_t, relu_config12>(layer11_out, layer12_out); // dense_2_relu
 
 }
+
+} // hls4ml_emtfnn_v1

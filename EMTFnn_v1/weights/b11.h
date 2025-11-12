@@ -6,10 +6,14 @@
 #ifndef B11_H_
 #define B11_H_
 
+namespace hls4ml_emtfnn_v1 {
+
 #ifdef LOAD_WEIGHTS_FROM_TXT
 dense_2_bias_t b11[2];
 #else
 dense_2_bias_t b11[2] = {2.376985788345337, 1.264318108558655};
 #endif
+
+} // hls4ml_emtfnn_v1
 
 #endif

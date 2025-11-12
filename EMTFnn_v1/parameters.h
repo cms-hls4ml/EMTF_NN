@@ -25,6 +25,8 @@
 #include "weights/w11.h"
 #include "weights/b11.h"
 
+namespace hls4ml_emtfnn_v1 { 
+
 // hls-fpga-machine-learning insert layer-config
 // batch_normalization
 struct config2 : nnet::batchnorm_config {
@@ -125,5 +127,6 @@ struct relu_config12 : nnet::activ_config {
     typedef dense_2_relu_table_t table_t;
 };
 
+} // hls4ml_emtfnn_v1 
 
 #endif
