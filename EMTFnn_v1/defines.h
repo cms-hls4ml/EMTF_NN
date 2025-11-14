@@ -10,10 +10,10 @@
 namespace hls4ml_emtfnn_v1 {
 
 // hls-fpga-machine-learning insert numbers
-static const int N_INPUT_1_1 = 29;
-static const int N_LAYER_3 = 20;
-static const int N_LAYER_7 = 16;
-static const int N_LAYER_11 = 2;
+inline constexpr int N_INPUT_1_1 = 29;
+inline constexpr int N_LAYER_3 = 20;
+inline constexpr int N_LAYER_7 = 16;
+inline constexpr int N_LAYER_11 = 2;
 
 // hls-fpga-machine-learning insert layer-precision
 typedef ap_uint<13> input_t;
